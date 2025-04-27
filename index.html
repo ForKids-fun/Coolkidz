@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CoolKidZ</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoolKidZ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1 id="coolkidZHeading" onclick="refreshPage()">CoolKidZ</h1>
+    <div class="buttons">
+      <button id="signUpButton" onclick="showSignUp()">Sign Up</button>
+      <button id="signInButton" onclick="showSignIn()">Sign In</button>
+      <button id="logOutButton" class="hidden" onclick="logOut()">Log Out</button>
+      <button id="addMediaButton" class="hidden" onclick="addMedia()">Add Media</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="welcomeMessage" class="welcome-message hidden"></div>
+    
+    <div id="loginForm" class="form-box hidden">
+      <h2>Log In</h2>
+      <input type="text" id="usernameInput" placeholder="Enter username" />
+      <input type="password" id="passwordInput" placeholder="Enter password" />
+      <button onclick="logIn()">Log In</button>
+    </div>
+
+    <div id="signUpForm" class="form-box hidden">
+      <h2>Sign Up</h2>
+      <input type="text" id="newUsernameInput" placeholder="Choose a username" />
+      <input type="password" id="newPasswordInput" placeholder="Choose a password" />
+      <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="mediaContainer" class="media-container"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
